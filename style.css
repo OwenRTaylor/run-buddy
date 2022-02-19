@@ -49,18 +49,18 @@ header nav ul li a {
     height: 600px;
     background-size: cover;
     background-position: center;
-    
+    position: relative;
 }
 
 .hero-form{
-    border: solid 3px #024e76; 
+    border: 3px solid #024e76; 
     background-color: #fce138;
     padding: 20px;
     width: 500px;
     color: #024e76;
+    position: absolute;
     bottom: 120px;
     right: 140px;
-    position: absolute;
 }
 
 .hero-form h3{
@@ -95,6 +95,27 @@ header nav ul li a {
 }
 /* HERO STYLE END */
 
+/* WHAT WE DO &1234 */
+.intro{
+    text-align: center;
+}
+
+.intro h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid #fce138;
+    display: inline;
+}
+
+.intro p{
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+}
 /* FOOTER STYLING */
 footer {
     background-color: #fce138;
