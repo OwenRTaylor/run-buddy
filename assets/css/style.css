@@ -27,10 +27,11 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("./assets/Images/hero-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  border-bottom: opacity 0;
   z-index: 9999;
 }
 
@@ -110,7 +111,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url('./assets/Images/hero-bg.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -137,10 +138,10 @@ section {
 }
 
 .hero-form {
-  border: 3px solid var(--secondary-color);
+  border: 3px solid #024e76;
   background-color: rgba(255, 225, 56, 0.8);
   padding: 20px;
-  color: var(--secondary-color);
+  color: #024e76;
   width: 40%;
   margin: 3.5%;
   border-radius: 15px;
@@ -179,16 +180,6 @@ section {
 .hero-form label {
   margin: 0 5px;
 }
-
-.hero-form button {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-} 
-
 .checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
 }
@@ -204,12 +195,11 @@ section {
   content: "";
   height: 20px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid var(--secondary-color);  
+  background: rgba(255, 225, 255, 0.75);
   position: absolute;
   top: -4px;
   left: -30px;
-}
+} 
 
 .radio-wrapper label::before {
   border-radius: 50%;
@@ -217,14 +207,14 @@ section {
 
 .radio-wrapper label::after {
   content: "";
-  height: 20px;
   width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--secondary-color);
   position: absolute;
   left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+  top:-3px;
+  background-image: radial-gradient(circle, #39a6b2 , #024e76);
 }
 
 .checkbox-wrapper label::after {
@@ -239,15 +229,25 @@ section {
   transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after, 
+.checkbox-wrapper input + label::after,
 .radio-wrapper input + label::after {
   content: none;
 }
 
-.checkbox-wrapper input:checked + label::after, 
+
+.checkbox-wrapper input:checked + label::after,
 .radio-wrapper input:checked + label::after {
   content: "";
 }
+
+.hero-form button {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+} 
 /* HERO STYLES END */
 
 
@@ -272,6 +272,7 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
+
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -292,6 +293,7 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
+  border-bottom: 1px solid var(--tertiary-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -421,11 +423,11 @@ section {
 }
 
 .contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: var(--secondary-color);
+  color: #024e76;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
@@ -441,8 +443,8 @@ section {
 .contact-form button {
   width: 100%;
   border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: #fce138;
+  color: #024e76;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
@@ -450,12 +452,12 @@ section {
 }
 
 .contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
+  color: #fce138;
+  background: #39a6b2;
 }
 
 .contact-info a {
-  color: var(--primary-color);
+  color: #fce138;
 }
 /* REACH OUT STYLES END */
 
